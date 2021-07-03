@@ -7,6 +7,7 @@
 # @lc code=start
 class Solution:
     def sumOfDigits(self, nums: List[int]) -> int:
+        '''
         min_nums = min(nums)
         if min_nums <10 :
             if min_nums %2 == 0:
@@ -21,6 +22,7 @@ class Solution:
                 return 1
             else:
                 return 0
-        
+        '''
+        return (sum([int(i) for i in str(min(nums))])+1)%2
 # @lc code=end
 
